@@ -42,7 +42,7 @@ export const Footer = () => {
           {/* Social Links */}
           <div className="flex items-center gap-3">
             <a
-              href="https://github.com/zainhassan"
+              href="https://github.com/Zain-code11"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2.5 rounded-xl bg-white/5 hover:bg-white/10 text-white transition-colors border border-white/10"

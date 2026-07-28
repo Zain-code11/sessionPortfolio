@@ -103,7 +103,7 @@ export const Hero = ({ onOpenContact, onOpenResume }) => {
             </a>
 
             <a
-              href="https://github.com/zainhassan"
+              href="https://github.com/Zain-code11"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-5 py-3.5 rounded-xl bg-white/5 hover:bg-white/10 text-white font-semibold text-sm border border-white/10 transition-all backdrop-blur-md"

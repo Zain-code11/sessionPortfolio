@@ -29,7 +29,7 @@ export const CallToAction = ({ onOpenContact, onOpenResume }) => {
         <div className="flex flex-wrap items-center justify-center gap-4 pt-2">
           
           <a
-            href="https://github.com/zainhassan"
+            href="https://github.com/Zain-code11"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-500 text-white font-bold text-sm shadow-xl shadow-blue-500/25 hover:opacity-95 transition-all transform hover:-translate-y-0.5"

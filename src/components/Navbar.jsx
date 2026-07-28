@@ -102,7 +102,7 @@ export const Navbar = ({ theme, toggleTheme, onOpenContact, onOpenInstructor, on
 
           {/* GitHub External */}
           <a
-            href="https://github.com/zainhassan"
+            href="https://github.com/Zain-code11"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-white/5 dark:bg-white/5 light:bg-slate-100 hover:bg-white/10 dark:hover:bg-white/10 light:hover:bg-slate-200 text-slate-200 dark:text-slate-200 light:text-slate-800 text-xs font-mono font-semibold border border-white/10 dark:border-white/10 light:border-slate-300 transition-all"
@@ -203,7 +203,7 @@ export const Navbar = ({ theme, toggleTheme, onOpenContact, onOpenInstructor, on
               <span>Download / View Resume</span>
             </button>
             <a
-              href="https://github.com/zainhassan"
+              href="https://github.com/Zain-code11"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setMobileMenuOpen(false)}
