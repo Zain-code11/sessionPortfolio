@@ -35,7 +35,7 @@ export const DetailsModal = ({ project, onClose }) => {
         </div>
 
         {/* Image banner */}
-        <div className="aspect-[16/9] w-full rounded-2xl overflow-hidden border border-white/10 dark:border-white/10 light:border-slate-200">
+        <div className="aspect-video w-full rounded-2xl overflow-hidden border border-white/10 dark:border-white/10 light:border-slate-200">
           <img
             src={project.image}
             alt={project.title}
@@ -95,7 +95,7 @@ export const DetailsModal = ({ project, onClose }) => {
             href={project.live}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-bold text-xs shadow-lg shadow-blue-500/25"
+            className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-linear-to-r from-blue-600 to-cyan-500 text-white font-bold text-xs shadow-lg shadow-blue-500/25"
           >
             <ExternalLink className="w-4 h-4" />
             <span>Open Live App</span>

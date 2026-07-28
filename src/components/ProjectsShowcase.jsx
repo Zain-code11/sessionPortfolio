@@ -11,7 +11,7 @@ export const ProjectsShowcase = () => {
     <section id="projects" className="relative py-20 sm:py-32 bg-[#050816] text-white selection:bg-cyan-500 selection:text-black border-t border-white/10">
       
       {/* Background ambient lighting */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-gradient-to-tr from-blue-600/10 via-cyan-500/10 to-indigo-600/10 blur-[160px] pointer-events-none" />
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-200 h-125 bg-linear-to-tr from-blue-600/10 via-cyan-500/10 to-indigo-600/10 blur-[160px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-12">
         
@@ -23,7 +23,7 @@ export const ProjectsShowcase = () => {
           </div>
 
           <h2 className="text-3xl sm:text-5xl font-black tracking-tight text-white">
-            Featured <span className="bg-gradient-to-r from-blue-400 via-cyan-300 to-indigo-400 bg-clip-text text-transparent">React Projects</span>
+            Featured <span className="bg-linear-to-r from-blue-400 via-cyan-300 to-indigo-400 bg-clip-text text-transparent">React Projects</span>
           </h2>
 
           <p className="text-sm sm:text-base text-slate-300">

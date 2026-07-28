@@ -275,7 +275,7 @@ export const CustomCursor = ({ theme }) => {
   const dotBgClass = isDark ? 'bg-white shadow-[0_0_10px_#ffffff]' : 'bg-slate-900 shadow-[0_0_8px_#0f172a]';
 
   return (
-    <div className="pointer-events-none fixed inset-0 z-[999999] overflow-hidden">
+    <div className="pointer-events-none fixed inset-0 z-999999 overflow-hidden">
       
       {/* 1. Cursor Trail Particles */}
       {trail.map((p) => (

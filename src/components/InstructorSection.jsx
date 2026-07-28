@@ -126,7 +126,7 @@ export const InstructorSection = () => {
     <section id="instructor" className="relative py-20 sm:py-32 bg-[#050816] text-white selection:bg-cyan-500 selection:text-black border-t border-white/10">
       
       {/* Background glow */}
-      <div className="absolute top-1/2 right-1/4 w-[500px] h-[500px] bg-gradient-to-bl from-amber-500/10 via-purple-600/10 to-transparent blur-[140px] pointer-events-none" />
+      <div className="absolute top-1/2 right-1/4 w-125 h-125 bg-linear-to-bl from-amber-500/10 via-purple-600/10 to-transparent blur-[140px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-12">
         
@@ -138,7 +138,7 @@ export const InstructorSection = () => {
           </div>
 
           <h2 className="text-3xl sm:text-5xl font-black tracking-tight text-white">
-            Instructor <span className="bg-gradient-to-r from-amber-300 via-orange-400 to-rose-400 bg-clip-text text-transparent">Evaluation Dashboard</span>
+            Instructor <span className="bg-linear-to-r from-amber-300 via-orange-400 to-rose-400 bg-clip-text text-transparent">Evaluation Dashboard</span>
           </h2>
 
           <p className="text-sm sm:text-base text-slate-300">
@@ -221,7 +221,7 @@ export const InstructorSection = () => {
 
             <button
               onClick={handleSave}
-              className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 text-slate-950 font-extrabold text-xs shadow-lg shadow-amber-500/20 hover:opacity-95 transition-all flex items-center gap-1.5"
+              className="px-5 py-2.5 rounded-xl bg-linear-to-r from-amber-500 to-orange-500 text-slate-950 font-extrabold text-xs shadow-lg shadow-amber-500/20 hover:opacity-95 transition-all flex items-center gap-1.5"
             >
               <Save className="w-3.5 h-3.5" />
               <span>Save Evaluation</span>

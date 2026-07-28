@@ -39,9 +39,9 @@ export const Navbar = ({ theme, toggleTheme, onOpenContact, onOpenInstructor, on
           href="#home"
           className="flex items-center gap-3 group focus:outline-none"
         >
-          <div className="relative w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 via-indigo-600 to-cyan-400 p-[2px] shadow-lg shadow-blue-500/25 group-hover:shadow-blue-500/50 transition-all duration-300 transform group-hover:scale-105">
+          <div className="relative w-10 h-10 rounded-xl bg-linear-to-tr from-blue-600 via-indigo-600 to-cyan-400 p-0.5 shadow-lg shadow-blue-500/25 group-hover:shadow-blue-500/50 transition-all duration-300 transform group-hover:scale-105">
             <div className="w-full h-full bg-[#050816] dark:bg-[#050816] light:bg-white rounded-[10px] flex items-center justify-center">
-              <span className="font-black text-sm tracking-tight bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+              <span className="font-black text-sm tracking-tight bg-linear-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
                 ZH
               </span>
             </div>
@@ -97,7 +97,7 @@ export const Navbar = ({ theme, toggleTheme, onOpenContact, onOpenInstructor, on
             className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-white/5 dark:bg-white/5 light:bg-slate-100 hover:bg-white/10 dark:hover:bg-white/10 light:hover:bg-slate-200 text-slate-200 dark:text-slate-200 light:text-slate-800 text-xs font-mono font-semibold border border-white/10 dark:border-white/10 light:border-slate-300 transition-all"
           >
             <FileText className="w-3.5 h-3.5 text-cyan-400" />
-            <span>Resume</span>
+            <span className="dark:text-white text-black">Resume</span>
           </button>
 
           {/* GitHub External */}
@@ -108,8 +108,8 @@ export const Navbar = ({ theme, toggleTheme, onOpenContact, onOpenInstructor, on
             className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-white/5 dark:bg-white/5 light:bg-slate-100 hover:bg-white/10 dark:hover:bg-white/10 light:hover:bg-slate-200 text-slate-200 dark:text-slate-200 light:text-slate-800 text-xs font-mono font-semibold border border-white/10 dark:border-white/10 light:border-slate-300 transition-all"
             title="GitHub Profile"
           >
-            <Github className="w-3.5 h-3.5" />
-            <span>GitHub</span>
+            <Github className="w-3.5 h-3.5 dark:text-white text-black" />
+            <span className="dark:text-white text-black">GitHub</span>
           </a>
 
           {/* Theme Toggle Button */}

@@ -4,15 +4,15 @@ import { ArrowDown, Sparkles, Github, FileText, Mail, MapPin, Building2, UserChe
 
 export const Hero = ({ onOpenContact, onOpenResume }) => {
   return (
-    <section id="home" className="relative min-h-[100dvh] w-full bg-[#050816] text-white selection:bg-cyan-500 selection:text-black flex flex-col justify-between pt-28 sm:pt-32 pb-16 overflow-hidden">
+    <section id="home" className="relative min-h-dvh w-full bg-[#050816] text-white selection:bg-cyan-500 selection:text-black flex flex-col justify-between pt-28 sm:pt-32 pb-16 overflow-hidden">
       
       {/* Animated Background Mesh & Glowing Orbs */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         {/* Cyan Glow Orb */}
-        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] sm:w-[700px] h-[500px] sm:h-[700px] bg-gradient-to-tr from-blue-600/20 via-indigo-600/15 to-cyan-400/15 rounded-full blur-[140px] animate-glow pointer-events-none" />
+        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-125 sm:w-175 h-125 sm:h-175 bg-linear-to-tr from-blue-600/20 via-indigo-600/15 to-cyan-400/15 rounded-full blur-[140px] animate-glow pointer-events-none" />
         
         {/* Purple Glow Orb */}
-        <div className="absolute bottom-1/4 right-1/4 w-[400px] sm:w-[600px] h-[400px] sm:h-[600px] bg-gradient-to-bl from-purple-600/15 via-fuchsia-600/15 to-blue-600/10 rounded-full blur-[150px] animate-glow-delayed pointer-events-none" />
+        <div className="absolute bottom-1/4 right-1/4 w-100 sm:w-150 h-100 sm:h-150 bg-linear-to-bl from-purple-600/15 via-fuchsia-600/15 to-blue-600/10 rounded-full blur-[150px] animate-glow-delayed pointer-events-none" />
 
         {/* Grid Overlay */}
         <div className="absolute inset-0 bg-grid-pattern opacity-30 pointer-events-none" />
@@ -53,7 +53,7 @@ export const Hero = ({ onOpenContact, onOpenResume }) => {
           >
             <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tight text-white leading-[1.1]">
               React JS Developer <br />
-              <span className="bg-gradient-to-r from-blue-400 via-cyan-300 to-indigo-400 bg-clip-text text-transparent drop-shadow-[0_0_35px_rgba(56,189,248,0.4)]">
+              <span className="bg-linear-to-r from-blue-400 via-cyan-300 to-indigo-400 bg-clip-text text-transparent drop-shadow-[0_0_35px_rgba(56,189,248,0.4)]">
                 Project Showcase
               </span>
             </h1>
@@ -96,7 +96,7 @@ export const Hero = ({ onOpenContact, onOpenResume }) => {
           >
             <a
               href="#projects"
-              className="group inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-500 text-white font-bold text-sm shadow-[0_0_25px_rgba(37,99,235,0.4)] hover:shadow-[0_0_40px_rgba(56,189,248,0.6)] transition-all duration-300 transform hover:-translate-y-0.5"
+              className="group inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-linear-to-r from-blue-600 via-indigo-600 to-cyan-500 text-white font-bold text-sm shadow-[0_0_25px_rgba(37,99,235,0.4)] hover:shadow-[0_0_40px_rgba(56,189,248,0.6)] transition-all duration-300 transform hover:-translate-y-0.5"
             >
               <span>View Projects</span>
               <ArrowDown className="w-4 h-4 group-hover:translate-y-1 transition-transform" />
@@ -143,7 +143,7 @@ export const Hero = ({ onOpenContact, onOpenResume }) => {
             {/* Card Header */}
             <div className="flex items-center justify-between border-b border-white/10 dark:border-white/10 light:border-slate-200 pb-3.5">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 to-cyan-400 flex items-center justify-center font-bold text-white shadow-md text-sm">
+                <div className="w-10 h-10 rounded-xl bg-linear-to-tr from-blue-600 to-cyan-400 flex items-center justify-center font-bold text-white shadow-md text-sm">
                   ZH
                 </div>
                 <div>

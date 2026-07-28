@@ -10,7 +10,7 @@ export const Footer = () => {
           
           {/* Logo & Branding */}
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 via-indigo-600 to-cyan-400 p-[2px] shadow-lg">
+            <div className="w-10 h-10 rounded-xl bg-linear-to-tr from-blue-600 via-indigo-600 to-cyan-400 p-0.5 shadow-lg">
               <div className="w-full h-full bg-[#050816] rounded-[10px] flex items-center justify-center font-black text-cyan-400 text-sm">
                 ZH
               </div>

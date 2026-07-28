@@ -22,7 +22,7 @@ export const Roadmap = () => {
       <span id="roadmap" className="absolute -top-24" />
       
       {/* Background glow */}
-      <div className="absolute top-1/3 right-10 w-[500px] h-[500px] bg-gradient-to-br from-blue-600/10 via-cyan-500/10 to-transparent blur-[140px] pointer-events-none" />
+      <div className="absolute top-1/3 right-10 w-125 h-125 bg-linear-to-br from-blue-600/10 via-cyan-500/10 to-transparent blur-[140px] pointer-events-none" />
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-12">
         
@@ -34,7 +34,7 @@ export const Roadmap = () => {
           </div>
 
           <h2 className="text-3xl sm:text-5xl font-black tracking-tight text-white">
-            Frontend & Full-Stack <span className="bg-gradient-to-r from-blue-400 via-cyan-300 to-indigo-400 bg-clip-text text-transparent">Roadmap</span>
+            Frontend & Full-Stack <span className="bg-linear-to-r from-blue-400 via-cyan-300 to-indigo-400 bg-clip-text text-transparent">Roadmap</span>
           </h2>
 
           <p className="text-sm sm:text-base text-slate-300">
@@ -46,7 +46,7 @@ export const Roadmap = () => {
         <div className="relative pt-4">
           
           {/* Vertical Connecting Center Line */}
-          <div className="absolute top-0 bottom-0 left-4 sm:left-1/2 -translate-x-1/2 w-0.5 bg-gradient-to-b from-blue-600 via-cyan-400 to-purple-600 shadow-[0_0_15px_rgba(56,189,248,0.5)]" />
+          <div className="absolute top-0 bottom-0 left-4 sm:left-1/2 -translate-x-1/2 w-0.5 bg-linear-to-b from-blue-600 via-cyan-400 to-purple-600 shadow-[0_0_15px_rgba(56,189,248,0.5)]" />
 
           <div className="space-y-6 sm:space-y-8">
             {steps.map((step, idx) => {

@@ -79,7 +79,7 @@ export const ContactModal = ({ isOpen, onClose }) => {
         <div className="pt-2 flex items-center justify-end gap-3">
           <a
             href={`mailto:${email}?subject=Inquiry regarding React JS Internship Projects`}
-            className="w-full flex items-center justify-center gap-2 py-3 rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-bold text-xs shadow-lg shadow-purple-500/20"
+            className="w-full flex items-center justify-center gap-2 py-3 rounded-xl bg-linear-to-r from-purple-600 to-indigo-600 text-white font-bold text-xs shadow-lg shadow-purple-500/20"
           >
             <Send className="w-4 h-4" />
             <span>Send Direct Email</span>

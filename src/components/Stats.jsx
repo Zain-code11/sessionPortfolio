@@ -64,10 +64,10 @@ export default function Stats({ theme }) {
                 }`}
               >
                 {/* Background Glow Accent */}
-                <div className={`absolute -right-8 -bottom-8 w-32 h-32 rounded-full bg-gradient-to-br ${card.gradient} opacity-10 group-hover:opacity-20 blur-2xl transition-opacity pointer-events-none`} />
+                <div className={`absolute -right-8 -bottom-8 w-32 h-32 rounded-full bg-linear-to-br ${card.gradient} opacity-10 group-hover:opacity-20 blur-2xl transition-opacity pointer-events-none`} />
 
                 <div className="flex items-start justify-between mb-4">
-                  <div className={`p-3 rounded-2xl bg-gradient-to-br ${card.gradient} text-white shadow-lg shadow-black/10`}>
+                  <div className={`p-3 rounded-2xl bg-linear-to-br ${card.gradient} text-white shadow-lg shadow-black/10`}>
                     <IconComponent className="w-6 h-6" />
                   </div>
                   <span className={`px-2.5 py-1 text-[11px] font-bold rounded-full border ${card.badgeColor}`}>

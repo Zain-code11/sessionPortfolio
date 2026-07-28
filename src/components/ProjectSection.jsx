@@ -35,10 +35,10 @@ export const ProjectSection = ({ project, index }) => {
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             className={`lg:col-span-7 ${isEven ? 'lg:order-1' : 'lg:order-2'}`}
           >
-            <div className="relative group rounded-3xl p-2.5 sm:p-3 bg-gradient-to-br from-white/10 via-white/5 to-transparent dark:from-white/10 dark:via-white/5 light:from-slate-200 light:to-slate-100 border border-white/15 dark:border-white/15 light:border-slate-300 shadow-2xl backdrop-blur-xl overflow-hidden">
+            <div className="relative group rounded-3xl p-2.5 sm:p-3 bg-linear-to-br from-white/10 via-white/5 to-transparent dark:from-white/10 dark:via-white/5 light:from-slate-200 light:to-slate-100 border border-white/15 dark:border-white/15 light:border-slate-300 shadow-2xl backdrop-blur-xl overflow-hidden">
               
               {/* Outer Image Box */}
-              <div className="relative aspect-[16/10] w-full rounded-2xl overflow-hidden bg-slate-900">
+              <div className="relative aspect-16/10 w-full rounded-2xl overflow-hidden bg-slate-900">
                 <img
                   src={project.image}
                   alt={project.title}
@@ -47,7 +47,7 @@ export const ProjectSection = ({ project, index }) => {
                 />
 
                 {/* Subtle Gradient Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-slate-950/20 group-hover:opacity-60 transition-opacity" />
+                <div className="absolute inset-0 bg-linear-to-t from-slate-950/80 via-transparent to-slate-950/20 group-hover:opacity-60 transition-opacity" />
 
                 {/* Project Tagline Bar (Overlay Top) */}
                 <div className="absolute top-4 left-4 right-4 flex items-center justify-between pointer-events-none">
@@ -103,7 +103,7 @@ export const ProjectSection = ({ project, index }) => {
           >
             {/* Top Indicator */}
             <div className="flex items-center gap-3">
-              <span className="font-mono text-xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+              <span className="font-mono text-xl font-bold bg-linear-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
                 {project.number} / 04
               </span>
               <div className="w-12 h-px bg-white/20 dark:bg-white/20 light:bg-slate-300" />
@@ -164,7 +164,7 @@ export const ProjectSection = ({ project, index }) => {
                 href={project.live}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-bold text-sm shadow-lg shadow-blue-500/25 hover:shadow-cyan-500/40 transition-all duration-300 transform hover:-translate-y-0.5"
+                className="group inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-linear-to-r from-blue-600 to-cyan-500 text-white font-bold text-sm shadow-lg shadow-blue-500/25 hover:shadow-cyan-500/40 transition-all duration-300 transform hover:-translate-y-0.5"
               >
                 <ExternalLink className="w-4 h-4 group-hover:rotate-12 transition-transform" />
                 <span>Live Project</span>

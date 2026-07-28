@@ -70,7 +70,7 @@ export default function DemoModal({ project, onClose, theme }) {
           {/* Interactive Demo Body */}
           <div className="p-6 overflow-y-auto max-h-[80vh]">
             <div className="mb-6 p-4 rounded-2xl bg-blue-500/10 border border-blue-500/20 text-xs text-blue-300 flex items-start gap-2.5">
-              <Sparkles className="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5" />
+              <Sparkles className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />
               <div>
                 <strong className="block text-white mb-0.5">Interactive Demo Instructions:</strong>
                 {project.longDescription}

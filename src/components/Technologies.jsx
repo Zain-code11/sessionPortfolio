@@ -57,7 +57,7 @@ export default function Technologies({ theme }) {
                     : 'bg-white border-slate-200 shadow-sm hover:shadow-lg'
                 }`}
               >
-                <div className={`p-3 rounded-xl border ${tech.color} flex items-center justify-center flex-shrink-0 group-hover:rotate-6 transition-transform`}>
+                <div className={`p-3 rounded-xl border ${tech.color} flex items-center justify-center shrink-0 group-hover:rotate-6 transition-transform`}>
                   <IconComponent className="w-6 h-6" />
                 </div>
 

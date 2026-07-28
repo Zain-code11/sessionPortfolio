@@ -55,7 +55,7 @@ TECHNICAL SKILLS:
 
         {/* Header */}
         <div className="flex items-center gap-3 border-b border-white/10 dark:border-white/10 light:border-slate-200 pb-4">
-          <div className="w-12 h-12 rounded-2xl bg-gradient-to-tr from-blue-600 to-cyan-400 p-[2px] shadow-lg">
+          <div className="w-12 h-12 rounded-2xl bg-linear-to-tr from-blue-600 to-cyan-400 p-0.5 shadow-lg">
             <div className="w-full h-full bg-[#050816] rounded-[14px] flex items-center justify-center font-black text-cyan-400 text-lg">
               ZH
             </div>
@@ -125,7 +125,7 @@ TECHNICAL SKILLS:
         <div className="pt-4 border-t border-white/10 dark:border-white/10 light:border-slate-200 flex items-center justify-end gap-3">
           <button
             onClick={handleDownload}
-            className="flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-500 text-white font-bold text-xs shadow-lg shadow-blue-500/25 hover:opacity-95 transition-all"
+            className="flex items-center gap-2 px-6 py-3 rounded-xl bg-linear-to-r from-blue-600 via-indigo-600 to-cyan-500 text-white font-bold text-xs shadow-lg shadow-blue-500/25 hover:opacity-95 transition-all"
           >
             <Download className="w-4 h-4" />
             <span>Download Resume (.TXT)</span>

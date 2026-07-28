@@ -6,7 +6,7 @@ export const CallToAction = ({ onOpenContact, onOpenResume }) => {
     <section id="cta" className="relative py-20 sm:py-28 bg-[#050816] text-white selection:bg-cyan-500 selection:text-black border-t border-white/10 overflow-hidden">
       
       {/* Background Glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[350px] bg-gradient-to-r from-blue-600/15 via-indigo-600/20 to-cyan-500/15 blur-[150px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-175 h-87.5 bg-linear-to-r from-blue-600/15 via-indigo-600/20 to-cyan-500/15 blur-[150px] pointer-events-none" />
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center space-y-8">
         
@@ -17,7 +17,7 @@ export const CallToAction = ({ onOpenContact, onOpenResume }) => {
 
         <h2 className="text-3xl sm:text-5xl font-black tracking-tight text-white leading-tight">
           Interested in source code or <br />
-          <span className="bg-gradient-to-r from-blue-400 via-cyan-300 to-purple-400 bg-clip-text text-transparent">
+          <span className="bg-linear-to-r from-blue-400 via-cyan-300 to-purple-400 bg-clip-text text-transparent">
             evaluating additional projects?
           </span>
         </h2>
