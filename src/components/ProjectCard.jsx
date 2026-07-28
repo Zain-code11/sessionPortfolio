@@ -18,6 +18,7 @@ export const ProjectCard = ({ project, onOpenDetails }) => {
           <img
             src={project.image}
             alt={project.title}
+            referrerPolicy="no-referrer"
             className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-700 ease-out"
             loading="lazy"
           />
