@@ -4,7 +4,7 @@ import { ArrowDown, Sparkles, Github, FileText, Mail, MapPin, Building2, UserChe
 
 export const Hero = ({ onOpenContact, onOpenResume }) => {
   return (
-    <section id="home" className="relative min-h-screen w-full bg-[#050816] text-white selection:bg-cyan-500 selection:text-black flex flex-col justify-between pt-28 sm:pt-32 pb-16 overflow-hidden">
+    <section id="home" className="relative min-h-[100dvh] w-full bg-[#050816] text-white selection:bg-cyan-500 selection:text-black flex flex-col justify-between pt-28 sm:pt-32 pb-16 overflow-hidden">
       
       {/* Animated Background Mesh & Glowing Orbs */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">

@@ -127,10 +127,10 @@ export const InstructorDashboardPage = ({ onBack, theme, toggleTheme, onOpenResu
   }
 
   return (
-    <div className="min-h-screen bg-[#050816] text-white selection:bg-cyan-500 selection:text-black">
+    <div className="min-h-[100dvh] w-full overflow-x-hidden bg-[#050816] text-white selection:bg-cyan-500 selection:text-black">
       
       {/* Top Standalone Header */}
-      <header className="sticky top-0 z-40 bg-[#050816]/90 backdrop-blur-xl border-b border-white/10 py-4 px-4 sm:px-8">
+      <header className="sticky top-0 z-50 transform-gpu translate-z-0 bg-[#050816]/90 backdrop-blur-xl border-b border-white/10 py-4 px-4 sm:px-8">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <button
             onClick={onBack}

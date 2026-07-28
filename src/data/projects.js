@@ -16,7 +16,7 @@ const projects = [
     live: "https://react-snake-game-demo.vercel.app",
     github: "https://github.com/zainhassan/react-snake-game",
     status: "Completed",
-    completionDate: "July 2026",
+    completionDate: "Jan 2026",
     accent: "from-emerald-500 via-teal-400 to-cyan-500",
     glowColor: "rgba(16, 185, 129, 0.25)",
     tagline: "Retro Arcade • React State • Local Persistence"
@@ -38,7 +38,7 @@ const projects = [
     live: "https://dragon-runner-game.netlify.app",
     github: "https://github.com/zainhassan/dragon-runner-game",
     status: "Completed",
-    completionDate: "July 2026",
+    completionDate: "Feb 2026",
     accent: "from-purple-500 via-fuchsia-500 to-indigo-500",
     glowColor: "rgba(168, 85, 247, 0.25)",
     tagline: "2D Game Engine • Physics Collision • Web Audio"
@@ -60,7 +60,7 @@ const projects = [
     live: "https://scientific-calculator-app.netlify.app",
     github: "https://github.com/zainhassan/scientific-calculator",
     status: "Completed",
-    completionDate: "July 2026",
+    completionDate: "Feb 2026",
     accent: "from-cyan-400 via-blue-500 to-indigo-600",
     glowColor: "rgba(6, 182, 212, 0.25)",
     tagline: "Mathematical Parser • Keyboard Bindings • History Memory"
@@ -82,7 +82,7 @@ const projects = [
     live: "https://digital-alarm-clock-app.netlify.app",
     github: "https://github.com/zainhassan/alarm-clock-app",
     status: "Completed",
-    completionDate: "July 2026",
+    completionDate: "Mar 2026",
     accent: "from-amber-400 via-orange-500 to-rose-500",
     glowColor: "rgba(245, 158, 11, 0.25)",
     tagline: "Web Audio Sync • Local Storage Alarms • Real-time Clock"

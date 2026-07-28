@@ -77,9 +77,17 @@ export function App() {
     };
   }, []);
 
+  const handleLoadingComplete = () => {
+    setLoading(false);
+    requestAnimationFrame(() => {
+      window.dispatchEvent(new Event('resize'));
+      ScrollTrigger.refresh();
+    });
+  };
+
   if (currentView === 'instructor') {
     return (
-      <div className={`min-h-screen transition-colors duration-300 font-sans selection:bg-cyan-500 selection:text-black ${
+      <div className={`min-h-screen min-h-[100dvh] w-full overflow-x-hidden transition-colors duration-300 font-sans selection:bg-cyan-500 selection:text-black ${
         theme === 'dark' ? 'bg-[#050816] text-white dark' : 'bg-[#f8fafc] text-slate-900 light'
       }`}>
         <CustomCursor theme={theme} />
@@ -99,13 +107,13 @@ export function App() {
   }
 
   return (
-    <div className={`min-h-screen transition-colors duration-300 font-sans selection:bg-cyan-500 selection:text-black ${
+    <div className={`min-h-screen min-h-[100dvh] w-full overflow-x-hidden transition-colors duration-300 font-sans selection:bg-cyan-500 selection:text-black ${
       theme === 'dark' ? 'bg-[#050816] text-white dark' : 'bg-[#f8fafc] text-slate-900 light'
     }`}>
       <CustomCursor theme={theme} />
       
       {/* Loading Screen */}
-      {loading && <LoadingScreen onComplete={() => setLoading(false)} />}
+      {loading && <LoadingScreen onComplete={handleLoadingComplete} />}
 
       {/* Sticky Navbar */}
       <Navbar

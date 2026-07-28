@@ -26,10 +26,10 @@ export const Navbar = ({ theme, toggleTheme, onOpenContact, onOpenInstructor, on
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transform-gpu translate-z-0 transition-all duration-300 ${
         scrolled
-          ? 'bg-[#050816]/85 dark:bg-[#050816]/85 light:bg-white/85 backdrop-blur-xl border-b border-white/10 dark:border-white/10 light:border-slate-200/80 shadow-2xl py-3.5'
-          : 'bg-transparent py-5'
+          ? 'bg-[#050816]/90 dark:bg-[#050816]/90 light:bg-white/90 backdrop-blur-xl border-b border-white/10 dark:border-white/10 light:border-slate-200/80 shadow-2xl py-3'
+          : 'bg-[#050816]/85 dark:bg-[#050816]/85 light:bg-white/85 backdrop-blur-md border-b border-white/10 dark:border-white/10 light:border-slate-200/60 py-3.5'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
@@ -97,7 +97,7 @@ export const Navbar = ({ theme, toggleTheme, onOpenContact, onOpenInstructor, on
             className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-white/5 dark:bg-white/5 light:bg-slate-100 hover:bg-white/10 dark:hover:bg-white/10 light:hover:bg-slate-200 text-slate-200 dark:text-slate-200 light:text-slate-800 text-xs font-mono font-semibold border border-white/10 dark:border-white/10 light:border-slate-300 transition-all"
           >
             <FileText className="w-3.5 h-3.5 text-cyan-400" />
-            <span className="text-black dark:text-white ">Resume</span>
+            <span>Resume</span>
           </button>
 
           {/* GitHub External */}
@@ -108,8 +108,8 @@ export const Navbar = ({ theme, toggleTheme, onOpenContact, onOpenInstructor, on
             className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-white/5 dark:bg-white/5 light:bg-slate-100 hover:bg-white/10 dark:hover:bg-white/10 light:hover:bg-slate-200 text-slate-200 dark:text-slate-200 light:text-slate-800 text-xs font-mono font-semibold border border-white/10 dark:border-white/10 light:border-slate-300 transition-all"
             title="GitHub Profile"
           >
-            <Github className="w-3.5 h-3.5 text-black dark:text-white" />
-            <span className="text-black dark:text-white ">GitHub</span>
+            <Github className="w-3.5 h-3.5" />
+            <span>GitHub</span>
           </a>
 
           {/* Theme Toggle Button */}
@@ -129,21 +129,22 @@ export const Navbar = ({ theme, toggleTheme, onOpenContact, onOpenInstructor, on
         </div>
 
         {/* Mobile Menu Controls */}
-        <div className="flex lg:hidden items-center gap-2">
+        <div className="flex lg:hidden items-center gap-2 relative z-50">
           <button
             onClick={toggleTheme}
-            className="p-2 rounded-lg bg-white/10 dark:bg-white/10 light:bg-slate-100 text-slate-200 dark:text-slate-200 light:text-slate-800"
+            className="p-2.5 rounded-xl bg-white/10 dark:bg-white/10 light:bg-slate-100 text-slate-200 dark:text-slate-200 light:text-slate-800 border border-white/10 dark:border-white/10 light:border-slate-300 transition-all flex items-center justify-center shrink-0"
             aria-label="Toggle theme"
+            title={`Switch to ${theme === 'light' ? 'Dark' : 'Light'} Mode`}
           >
-            {theme === 'light' ? <Moon className="w-4 h-4" /> : <Sun className="w-4 h-4 text-amber-300" />}
+            {theme === 'light' ? <Moon className="w-4 h-4 text-slate-800" /> : <Sun className="w-4 h-4 text-amber-300 animate-spin-slow" />}
           </button>
 
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="p-2 rounded-lg bg-white/10 dark:bg-white/10 light:bg-slate-100 text-white dark:text-white light:text-slate-900 focus:outline-none"
-            aria-label="Open menu"
+            className="p-2.5 rounded-xl bg-white/10 dark:bg-white/10 light:bg-slate-100 text-white dark:text-white light:text-slate-900 border border-white/10 dark:border-white/10 light:border-slate-300 focus:outline-none transition-all flex items-center justify-center shrink-0"
+            aria-label="Toggle navigation menu"
           >
-            {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {mobileMenuOpen ? <X className="w-5 h-5 text-cyan-400" /> : <Menu className="w-5 h-5" />}
           </button>
         </div>
 
@@ -202,7 +203,7 @@ export const Navbar = ({ theme, toggleTheme, onOpenContact, onOpenInstructor, on
               <span>Download / View Resume</span>
             </button>
             <a
-              href="https://github.com/Zain-code11"
+              href="https://github.com/zainhassan"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setMobileMenuOpen(false)}

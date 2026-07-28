@@ -6,8 +6,13 @@ export const LoadingScreen = ({ onComplete }) => {
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
+    // Prevent scrolling while loader is active
+    document.body.style.overflow = 'hidden';
+    document.documentElement.style.overflow = 'hidden';
+
+    let animationFrame;
     const startTime = Date.now();
-    const duration = 2000; // 2 seconds counter
+    const duration = 1800; // 1.8 seconds
 
     const updateProgress = () => {
       const elapsed = Date.now() - startTime;
@@ -15,23 +20,36 @@ export const LoadingScreen = ({ onComplete }) => {
       setProgress(current);
 
       if (current < 100) {
-        requestAnimationFrame(updateProgress);
+        animationFrame = requestAnimationFrame(updateProgress);
       } else {
         setTimeout(() => {
           if (onComplete) onComplete();
-        }, 300);
+        }, 150);
       }
     };
 
-    const animationFrame = requestAnimationFrame(updateProgress);
-    return () => cancelAnimationFrame(animationFrame);
+    animationFrame = requestAnimationFrame(updateProgress);
+
+    return () => {
+      cancelAnimationFrame(animationFrame);
+      document.body.style.overflow = '';
+      document.documentElement.style.overflow = '';
+    };
   }, [onComplete]);
 
   return (
     <motion.div
       initial={{ opacity: 1 }}
-      exit={{ opacity: 0, y: '-100%', transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1] } }}
-      className="fixed inset-0 z-50 flex flex-col justify-between p-8 sm:p-12 bg-[#050816] text-white selection:bg-cyan-500 selection:text-black"
+      exit={{ opacity: 0, y: '-100%', transition: { duration: 0.6, ease: [0.76, 0, 0.24, 1] } }}
+      style={{
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        width: '100vw',
+        height: '100dvh',
+        zIndex: 9999,
+      }}
+      className="flex flex-col justify-between p-6 sm:p-12 bg-[#050816] text-white selection:bg-cyan-500 selection:text-black transform-gpu translate-z-0 overflow-hidden"
     >
       {/* Header */}
       <div className="flex items-center justify-between text-xs font-mono uppercase tracking-widest text-slate-400">

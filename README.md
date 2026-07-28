@@ -1,18 +1,20 @@
-<<<<<<< HEAD
-# Student Project Showcase
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
+</div>
 
-A modern React JS project showcase featuring:
+# Run and deploy your AI Studio app
 
-- Snake Game
-- Dragon Game
-- Scientific Calculator
-- Alarm Clock
+This contains everything you need to run your app locally.
 
-Built with React JS, Vite, and Tailwind CSS.
+View your app in AI Studio: https://ai.studio/apps/c7865fca-7a80-40a5-a342-6c6e2c2ce06d
 
-**Developer:** Zain Hassan  
-**Role:** React JS Intern  
-**Organization:** EnigmatiX Software House
-=======
+## Run Locally
 
->>>>>>> a0f4cfdf4ca51a59674c3693fb5144bad45d9b78
+**Prerequisites:**  Node.js
+
+
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`
