@@ -202,7 +202,7 @@ export const Navbar = ({ theme, toggleTheme, onOpenContact, onOpenInstructor, on
               <span>Download / View Resume</span>
             </button>
             <a
-              href="https://github.com/zainhassan"
+              href="https://github.com/Zain-code11"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setMobileMenuOpen(false)}
